@@ -6,6 +6,6 @@
 https://zhuanlan.zhihu.com/p/60049290
 查找相关资料
 ## vim 插件有
-# 1 Ultisnip
-# 2 VimTex
+### 1 Ultisnip
+### 2 VimTex
   

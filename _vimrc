@@ -19,8 +19,11 @@ set tabstop=4
     let &t_EI = "\<Esc>[2 q"
 "设置WindowsTerminal光标
 noremap <Space> : 
-
-	
+nmap <CR> o<Esc>
+inoremap ( ()<Esc>i
+inoremap [ []<Esc>i
+inoremap { {}<Esc>i
+inoremap " ""<Esc>i
 
 let g:plug_url_format='https://git::@github.com.cnpmjs.org/%s.git'
 call plug#begin('~/.vim/plugged')

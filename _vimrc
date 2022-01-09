@@ -7,6 +7,7 @@ if &diffopt !~# 'internal'
   set diffexpr=MyDiff()
 endif
 winpos 10 10
+set nowrap
 set mouse=
 set clipboard^=unnamed,unnamedplus
 set noundofile
@@ -18,12 +19,20 @@ set tabstop=4
     let &t_SR = "\<Esc>[3 q"
     let &t_EI = "\<Esc>[2 q"
 "设置WindowsTerminal光标
-noremap <Space> : 
-nmap <CR> o<Esc>
+nnoremap <Space> : 
+nnoremap <CR> o<Esc>
 inoremap ( ()<Esc>i
 inoremap [ []<Esc>i
 inoremap { {}<Esc>i
 inoremap " ""<Esc>i
+nnoremap <leader>ev :vsplit $MYVIMRC<cr>
+nnoremap <leader>sv :source $MYVIMC<cr>
+" 水平滚动
+noremap <F7> 10zh
+inoremap <F7> <ESC>10zhi
+noremap <F8> 10zl
+inoremap <F8> <ESC>10zli
+inoremap <c-d> <ESC>ddi
 
 let g:plug_url_format='https://git::@github.com.cnpmjs.org/%s.git'
 call plug#begin('~/.vim/plugged')
@@ -62,7 +71,7 @@ Plug 'KeitaNakamura/tex-conceal.vim'
  
 Plug 'preservim/nerdtree'
 
- nmap <C-n> : NERDTreeToggle<CR>		
+ nnoremap <C-n> : NERDTreeToggle<CR>		
 
 Plug 'kien/ctrlp.vim'
 

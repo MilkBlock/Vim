@@ -26,13 +26,30 @@ inoremap [ []<Esc>i
 inoremap { {}<Esc>i
 inoremap " ""<Esc>i
 nnoremap <leader>ev :vsplit $MYVIMRC<cr>
-nnoremap <leader>sv :source $MYVIMC<cr>
+nnoremap <leader>sv :source $MYVIMRC<cr>
 " 水平滚动
 noremap <F7> 10zh
 inoremap <F7> <ESC>10zhi
 noremap <F8> 10zl
 inoremap <F8> <ESC>10zli
 inoremap <c-d> <ESC>ddi
+nnoremap <esc>h <c-w>h
+nnoremap <esc>k <c-w>k
+nnoremap <esc>j <c-w>j
+nnoremap <esc>l <c-w>l
+nnoremap <c-w> a<c-w><ESC>
+nnoremap <c-j> <c-d>
+nnoremap <c-k> <c-u>
+:nn <M-1> 1gt
+:nn <M-2> 2gt
+:nn <M-3> 3gt
+:nn <M-4> 4gt
+:nn <M-5> 5gt
+:nn <M-6> 6gt
+:nn <M-7> 7gt
+:nn <M-8> 8gt
+:nn <M-9> 9gt
+:nn <M-0> :tablast<CR>
 
 let g:plug_url_format='https://git::@github.com.cnpmjs.org/%s.git'
 call plug#begin('~/.vim/plugged')
@@ -84,6 +101,7 @@ Plug 'tpope/vim-surround'
 " Plug 'kana/vim-textobj-entire'
 
 " Plug 'mhinz/vim-startify'
+"
 
 Plug 'vim-airline/vim-airline'
 Plug 'vim-airline/vim-airline-themes'

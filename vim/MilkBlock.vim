@@ -1,8 +1,8 @@
 
 " Vim with all enhancements
 source $VIMRUNTIME/vimrc_example.vim
-so ~/.vim/vim/init.vim
-so ~/.vim/vim/skywind.vim
+so init.vim
+so skywind.vim
 
 vmap "+y y:call system("xclip -i -selection clipboard", getreg("\""))<CR>:call system("xclip -i", getreg("\""))<CR>
 nmap "+p:call setreg("\"",system("xclip -o -selection clipboard"))<CR>p

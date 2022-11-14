@@ -2,10 +2,14 @@
 The combination of Skywind's Portable configuration and LaTeX enhancement.
 
 
-# vim
+# Dedication 
 
-个人 Vim 配置，不一定适合每个人，选择你需要的整合到自己配置中：
+Skywind3000 
+Gilles Castel
 
+
+
+## From Skywind3000 
 配置入口是 init.vim，主要配置集中在 init 目录下面。
 
 (本文档严重滞后于功能，懒得更新了)
